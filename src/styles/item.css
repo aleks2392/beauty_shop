@@ -9,7 +9,7 @@
   }
 
   .product-card:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
   }
 
   .product-image {
@@ -48,7 +48,7 @@
 
   .product-description {
     font-size: 14px;
-    color: rgba(105, 117, 134, 1);
+    color: rgb(105 117 134 / 100%);
     margin-bottom: 10px;
   }
 

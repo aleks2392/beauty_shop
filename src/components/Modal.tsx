@@ -1,11 +1,15 @@
-import React from "react";
+import React, {FC} from "react";
 import "../styles/modal.css";
 import googleImg from "../../public/assets/img/google_img.png";
 import { Input } from "../ui/Input";
 import { Button } from "../ui/Button";
-import { Modal as UiModal } from "../ui/Modal";
+import { Modal as UiModal, ModalProps as UiModalProps } from "../ui/Modal";
 
-const Modal = ({ onClose }) => {
+type Props = {
+    onClose: UiModalProps['onClose'];
+};
+
+const Modal: FC<Props> = ({ onClose }) => {
   return (
     <UiModal onClose={onClose}>
       <h2 className="modal-title">Log In</h2>
