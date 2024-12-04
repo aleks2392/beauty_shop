@@ -14,6 +14,7 @@ import pluginReact from "eslint-plugin-react";
 export default [
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+    ignores: ["babel.config.js', 'webpack.config.js"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
