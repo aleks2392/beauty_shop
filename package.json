@@ -25,7 +25,7 @@
     "lint:scripts": "eslint \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\" --max-warnings 5",
     "lint:scripts:local": "eslint \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\" --cache --max-warnings 5",
     "lint:scripts:fix": "eslint \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\" --fix --fix-type suggestion",
-    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css": "stylelint \"src/**/*.css\" --fix",
     "lint:css:local": "stylelint \"src/**/*.css\" --cache",
     "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
