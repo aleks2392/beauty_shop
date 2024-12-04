@@ -21,18 +21,13 @@
     "build:prod": "webpack --mode production",
     "build:storybook": "storybook build",
     "test": "jest",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "lint:scripts": "eslint \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\" --max-warnings 5",
+    "lint:scripts:local": "eslint \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\" --cache --max-warnings 5",
+    "lint:scripts:fix": "eslint \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\" --fix --fix-type suggestion",
     "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css:local": "stylelint \"src/**/*.css\" --cache",
     "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
-    ]
   },
   "browserslist": {
     "production": [

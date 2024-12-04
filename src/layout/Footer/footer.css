@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #333; 
+  background-color: #333;
   color: #ddd;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -47,11 +47,11 @@
 }
 
 .footer-section ul li a:hover {
-  color: rgba(245, 163, 183, 1);
+  color: rgb(245 163 183 / 100%);
 }
 
 .brand-name {
-  color: rgba(245, 163, 183, 1);
+  color: rgb(245 163 183 / 100%);
 }
 
 .social-icons {
@@ -67,7 +67,7 @@
 }
 
 .social-icons img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .footer-subscribe {
@@ -98,17 +98,14 @@
   gap: 20px;
 }
 
-.footer-links a {
-  color: #aaa;
-  text-decoration: none;
+.footer-link:hover {
+  color: rgb(245 163 183 / 100%);
 }
 
-.footer-links a:hover {
-  color: rgba(245, 163, 183, 1);
+.subscribe-form-link:hover {
+  color: rgb(245 163 183 / 100%);
 }
-.subscribe-form a:hover {
-  color: rgba(245, 163, 183, 1);
-}
+
 .third {
     margin-top: -40px;
 }

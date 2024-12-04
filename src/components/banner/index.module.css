@@ -24,7 +24,7 @@
   top: 0;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../public/assets/img/bannerImg.png)
+  background-image: url("../../../public/assets/img/bannerImg.png")
 }
 
 .banner-content {
@@ -38,14 +38,14 @@
 .banner-content h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #333333;
+  color: #333;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .banner-content p {
   font-size: 21px;
-  color: #666666;
+  color: #666;
   margin-bottom: 25px;
 }
 
@@ -58,7 +58,7 @@
   width: 250px;
   height: 41px;
   background-color: #F5A3B7;
-  box-shadow: 0px 4px 20px rgba(245, 163, 183, 0.3);
+  box-shadow: 0 4px 20px rgb(245 163 183 / 30%);
   border: none;
   border-radius: 4px;
   color: black;
