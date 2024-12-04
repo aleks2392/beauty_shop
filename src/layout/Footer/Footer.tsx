@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import './footer.css';
 import facebook from '../../../public/assets/img/facebook.png'
 import pinterst from '../../../public/assets/img/pinterst.png'

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import '../styles/blog.css';
 import blogImg from '../../public/assets/img/blog.svg'
 import flowerLeft from "../../public/assets/img/leftFlower.png"

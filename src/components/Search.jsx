@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import PropTypes from "prop-types";
 import { Input } from "../ui/Input";

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import '../styles/item.css'
 import cream from '../../public/assets/img/aqua.png'
 import {Button} from '../ui/Button'

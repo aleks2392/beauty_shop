@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import './App.css';
 import Header from './layout/Header/Header'
 import {Banner} from './components/banner/Banner';

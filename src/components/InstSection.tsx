@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import '../styles/inst.css';
 import iamageInst from '../../public/assets/img/soft_finish.png'
 import {Button} from '../ui/Button';

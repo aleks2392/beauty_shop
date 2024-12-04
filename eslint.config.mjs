@@ -1,3 +1,9 @@
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "@typescript-eslint/eslint-plugin";
@@ -16,12 +22,19 @@ export default [
         ecmaFeatures: {
           jsx: true,
         },
+        project: "./tsconfig.json",
+        tsconfigRootDir: __dirname,
       },
       globals: globals.browser,
     },
     plugins: {
       "@typescript-eslint": tseslint,
       react: pluginReact,
+    },
+    settings: {
+      react: {
+        version: "detect",
+      },
     },
     rules: {
       ...pluginJs.configs.recommended.rules,
@@ -31,7 +44,7 @@ export default [
 
       ...pluginReact.configs.flat.recommended.rules,
 
-      "react/react-in-jsx-scope": "off", 
+      "react/react-in-jsx-scope": "off",
       "react/prop-types": "off",
     },
   },

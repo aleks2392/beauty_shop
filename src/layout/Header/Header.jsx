@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import search from '../../../public/assets/img/search.svg';
 import account from '../../../public/assets/img/account.svg';
 import cart from '../../../public/assets/img/cart.svg';

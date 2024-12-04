@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import React, {FC} from "react";
 import "../styles/modal.css";
 import googleImg from "../../public/assets/img/google_img.png";
