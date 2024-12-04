@@ -4,9 +4,11 @@ import cart from '../../../public/assets/img/cart.svg';
 import './header.css';
 import Modal from '../../components/Modal';
 import { useState } from 'react';
+import Search from '../../components/Search';
 
 function Header() {
     const [modalActive, setModalActive] = useState(false); 
+    const [searchActive, setSearchActive] = useState(false)
 
     const handleModalOpen = () => {
         setModalActive(true);
@@ -15,6 +17,14 @@ function Header() {
     const handleModalClose = () => {
         setModalActive(false); 
     };
+
+    const openSearchModal = () => {
+        setSearchActive(true)
+    }
+
+    const closeSearchModal = () => {
+        setSearchActive(false)
+    }
 
     return (
         <>
@@ -29,7 +39,7 @@ function Header() {
                         <a href="/">BLOG</a>
                     </nav>
                     <div className="icons">
-                        <div className="icon-item">
+                        <div className="icon-item" onClick={openSearchModal}>
                             <img src={search} alt="search" />
                             <span>SEARCH</span>
                         </div>
@@ -45,6 +55,7 @@ function Header() {
                 </div>
             </header>
             {modalActive && <Modal onClose={handleModalClose} />}
+            {searchActive && <Search onClose={closeSearchModal}/>}
         </>
     );
 }
