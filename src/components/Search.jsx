@@ -1,3 +1,5 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { Input } from "../ui/Input";
 import "../styles/search.css";
 
@@ -14,6 +16,10 @@ const Search = ({ onClose }) => {
       </div>
     </div>
   );
+};
+
+Search.propTypes = {
+  onClose: PropTypes.func.isRequired, 
 };
 
 export default Search;
