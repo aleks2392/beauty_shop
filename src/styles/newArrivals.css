@@ -22,7 +22,7 @@
  
   .see-all-arrivals {
     text-decoration: none;
-    color: rgba(105, 117, 134, 1);
+    color: rgb(105 117 134 / 100%);
     display: flex;
     justify-content: center;
     margin-bottom: 10px;

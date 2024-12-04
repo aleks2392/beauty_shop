@@ -67,7 +67,7 @@
   width: 250px;
   height: 41px;
   padding: 10px 88px;
-  background-color: rgba(245, 163, 183, 1);
+  background-color: rgb(245 163 183 / 100%);
   color: black;
   border-radius: 5px;
   text-decoration: none;

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, {FC} from "react";
 import cn from 'classnames';
 import * as styles from  './input.module.css';
