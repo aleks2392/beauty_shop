@@ -3,6 +3,7 @@ import Item from "../components/Item"
 import flowerLeft from "../../public/assets/img/leftFlower.png"
 import flowerRight from "../../public/assets/img/rightFlower.png"
 import '../styles/bestSallers.css'
+import React from "react";
 
 function BestSallers () {
     return (

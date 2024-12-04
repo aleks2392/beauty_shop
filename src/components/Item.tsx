@@ -2,6 +2,7 @@
 import '../styles/item.css'
 import cream from '../../public/assets/img/aqua.png'
 import {Button} from '../ui/Button'
+import React from "react";
 
 function Item () {
     return (

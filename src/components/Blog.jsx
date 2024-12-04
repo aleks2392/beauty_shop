@@ -3,6 +3,7 @@ import '../styles/blog.css';
 import blogImg from '../../public/assets/img/blog.svg'
 import flowerLeft from "../../public/assets/img/leftFlower.png"
 import flowerRight from "../../public/assets/img/rightFlower.png"
+import React from "react";
 
 
 const articles = [
