@@ -14,6 +14,7 @@
   gap: 60px;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .reverse .content {

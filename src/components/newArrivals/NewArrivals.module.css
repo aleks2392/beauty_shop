@@ -10,14 +10,23 @@
   background-color: #f9f9f9;
 }
 
+h2 {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .titleNewArrivals {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .titleNewArrivals img {
-  margin: 15px 0;
+  margin: 19px 0;
 }
 
 .seeAllArrivals {

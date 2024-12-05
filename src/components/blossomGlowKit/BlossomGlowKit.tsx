@@ -1,5 +1,5 @@
-import React from 'react';
-import blossomStyles from './Blossom.module.css';
+import React from "react";
+import blossomStyles from "./Blossom.module.css";
 
 interface BlossomGlowKitProps {
   title: string;
@@ -17,7 +17,7 @@ const BlossomGlowKit: React.FC<BlossomGlowKitProps> = ({
   return (
     <section
       className={`${blossomStyles.blossomGlowKit} ${
-        reverse ? blossomStyles.reverse : ''
+        reverse ? blossomStyles.reverse : ""
       }`}
     >
       <div className={blossomStyles.content}>
