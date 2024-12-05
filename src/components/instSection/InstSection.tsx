@@ -3,6 +3,10 @@ import styles from "./Inst.module.css";
 // @ts-expect-error" // eslint-line
 import iamageInst from "../../../public/assets/img/soft_finish.png";
 import { Button } from "../../ui/Button";
+// @ts-expect-error" // eslint-line
+import flowerLeft from "../../../public/assets/img/leftFlower.png";
+// @ts-expect-error" // eslint-line
+import flowerRight from "../../../public/assets/img/rightFlower.png";
 
 const InstagramSection = () => {
   const images = [
@@ -19,8 +23,10 @@ const InstagramSection = () => {
   return (
     <div className={styles.galleryContainer}>
       <header className={styles.galleryHeader}>
+        <img src={flowerRight} alt="Flower Right" />
         <span>SHARE HOW YOU BLOSSOMED WITH </span>
         <span className={styles.hashtag}>#BLOOMBEAUTY</span>
+        <img src={flowerLeft} alt="Flower Right" />
       </header>
       <div className={styles.gallerySubheader}>
         <a href="#">See All</a>

@@ -112,7 +112,6 @@
   transform: scale(1.05);
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
