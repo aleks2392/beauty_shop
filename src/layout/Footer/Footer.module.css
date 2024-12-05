@@ -1,11 +1,11 @@
-.footer-container {
+.footerContainer {
   background-color: #333;
   color: #ddd;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
 
-.footer-main {
+.footerMain {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -14,67 +14,67 @@
   align-items: center;
 }
 
-.footer-section {
+.footerSection {
   flex: 1 1 180px;
   justify-content: center;
 }
 
-.footer-section h3 {
+.footerSection h3 {
   font-size: 20px;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.footer-section p,
-.footer-section ul {
+.footerSection p,
+.footerSection ul {
   font-size: 14px;
   margin: 0;
   margin-top: 10px;
 }
 
-.footer-section ul {
+.footerSection ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-section ul li {
+.footerSection ul li {
   margin: 5px 0;
 }
 
-.footer-section ul li a {
+.footerSection ul li a {
   text-decoration: none;
   color: #ddd;
 }
 
-.footer-section ul li a:hover {
+.footerSection ul li a:hover {
   color: rgb(245 163 183 / 100%);
 }
 
-.brand-name {
+.brandName {
   color: rgb(245 163 183 / 100%);
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   gap: 60px;
 }
 
-.social-icons img {
+.socialIcons img {
   width: 29px;
   height: 29px;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
 
-.social-icons img:hover {
+.socialIcons img:hover {
   transform: scale(1.1);
 }
 
-.footer-subscribe {
+.footerSubscribe {
   max-width: 200px;
 }
 
-.footer-subscribe input {
+.footerSubscribe input {
   width: 100%;
   padding: 8px;
   margin: 10px 0;
@@ -82,7 +82,7 @@
   border-radius: 4px;
 }
 
-.footer-bottom {
+.footerBottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,23 +93,23 @@
   padding-top: 20px;
 }
 
-.footer-links {
+.footerLinks {
   display: flex;
   gap: 20px;
 }
 
-.footer-link:hover {
+.footerLink:hover {
   color: rgb(245 163 183 / 100%);
 }
 
-.subscribe-form-link:hover {
+.subscribeFormLink:hover {
   color: rgb(245 163 183 / 100%);
 }
 
 .third {
-    margin-top: -40px;
+  margin-top: -40px;
 }
 
 span {
-    line-height: 1.5
+  line-height: 1.5;
 }
