@@ -1,4 +1,4 @@
-.gallery-container {
+.galleryContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,10 +9,10 @@
   border: 1px solid #e0e0e0;
   margin-top: 40px;
   border-radius: 10px;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
-.gallery-header {
+.galleryHeader {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -20,22 +20,22 @@
   margin-bottom: 8px;
 }
 
-.gallery-header .hashtag {
-  color: rgb(245 163 183 / 100%); 
+.galleryHeader .hashtag {
+  color: rgb(245 163 183 / 100%);
 }
 
-.gallery-subheader {
+.gallerySubheader {
   font-size: 16px;
   color: rgb(245 163 183 / 100%);
   margin-bottom: 20px;
 }
 
-.gallery-subheader a {
+.gallerySubheader a {
   text-decoration: none;
   color: rgb(105 117 134 / 100%);
 }
 
-.gallery-images {
+.galleryImages {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -43,11 +43,11 @@
   margin-bottom: 20px;
 }
 
-.gallery-images > * {
+.galleryImages > * {
   flex: 1 1 calc((25% - 10px));
 }
 
-.gallery-image {
+.galleryImage {
   width: 250px;
   height: 250px;
   position: relative;
@@ -56,14 +56,14 @@
   box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
 }
 
-.gallery-image img {
+.galleryImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.gallery-image:hover img {
+.galleryImage:hover img {
   transform: scale(1.05);
 }
 
@@ -82,11 +82,11 @@
   transition: opacity 0.3s ease;
 }
 
-.gallery-image:hover .overlay {
+.galleryImage:hover .overlay {
   opacity: 1;
 }
 
-.overlay-button {
+.overlayButton {
   width: 120px;
   background-color: rgb(255 255 255 / 80%);
   border: none;
@@ -99,17 +99,12 @@
   transition: background-color 0.2s ease;
 }
 
-.overlay-button:hover {
-  background-color: rgb(245 163 183 / 100%); 
+.overlayButton:hover {
+  background-color: rgb(245 163 183 / 100%);
   color: white;
 }
 
-.buy-now {
-  background-color: rgb(245 163 183 / 100%); 
-  color: white;
-}
-
-.gallery-button {
+.galleryButton {
   padding: 10px 20px;
   font-size: 14px;
   width: 250px;
@@ -122,7 +117,7 @@
   transition: background-color 0.3s;
 }
 
-.gallery-button:hover {
+.galleryButton:hover {
   background-color: black;
   color: white;
 }

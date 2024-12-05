@@ -1,0 +1,57 @@
+.skinQuiz {
+  width: 85%;
+  margin: 0 auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fee2e3;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.skinQuizContent {
+  display: flex;
+}
+
+.skinQuizImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.skinQuizText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.skinQuizText h2 {
+  font-size: 36px;
+}
+
+.skinQuizText p {
+  font-size: 16px;
+  color: rgb(105, 117, 134);
+  width: 65%;
+}
+
+.exploreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 41px;
+  background: #f5a3b7;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: black;
+  color: white;
+}

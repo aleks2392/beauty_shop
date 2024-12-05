@@ -1,5 +1,5 @@
 import {Button} from '../../ui/Button';
-import styles from './index.module.css';
+import styles from './Banner.module.css';
 import React from "react";
 
 export const Banner = () => {

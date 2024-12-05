@@ -1,12 +1,13 @@
-const { resolve } = require('path');
+/* eslint-disable @typescript-eslint/no-require-imports */
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development', 
-  entry: resolve(__dirname, 'src', 'index.tsx'),
+  mode: 'development',
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
     filename: '[name].[contenthash].js',
-    path: resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build'),
     publicPath: 'auto',
     clean: true,
   },
@@ -19,29 +20,32 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              '@babel/preset-env',      
-              '@babel/preset-react',    
+              '@babel/preset-env',
+              '@babel/preset-react',
               '@babel/preset-typescript',
             ],
-            plugins: [
-            ],
+            plugins: [],
           },
         },
       },
       {
-        test: /\.css$/,
+        test: /\.module\.css$/,
         use: [
-          { loader: 'style-loader' },
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
-              esModule: false,
               modules: {
                 localIdentName: '[name]__[local]--[hash:base64:5]',
               },
             },
           },
         ],
+      },
+      {
+        test: /\.css$/,
+        exclude: /\.module\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,

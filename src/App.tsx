@@ -3,14 +3,14 @@ import React from "react";
 import './App.css';
 import Header from './layout/Header/Header'
 import {Banner} from './components/banner/Banner';
-import NewArrivals from './components/NewArrivals';
-import BestSallers from './components/BestSallers';
-import BlossomGlowKit from './components/BlossomGlowKit'
+import NewArrivals from './components/newArrivals/NewArrivals';
+import BestSallers from './components/bestSallers/BestSallers';
+import BlossomGlowKit from './components/blossomGlowKit/BlossomGlowKit'
 import BlossomIMG1 from '../public/assets/img/BlossomIMG1.svg';
 import BlossomIMG2 from '../public/assets/img/BlossomIMG.svg';
-import Blog from './components/Blog'
-import Quiz from './components/BannerSkinQuiz'
-import InstSection from "./components/InstSection"
+import Blog from './components/blog/Blog'
+import Quiz from './components/bannerSkinQuiz/BannerSkinQuiz'
+import InstSection from "./components/instSection/InstSection"
 import Footer from './layout/Footer/Footer';
 
 function App() {

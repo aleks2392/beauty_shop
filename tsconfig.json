@@ -17,6 +17,6 @@
     "noEmit": false,
     "outDir": "./build"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "custom.d.ts", "webpack.config.js"],
   "exclude": ["node_modules", "build", "babel.config.js"]
 }

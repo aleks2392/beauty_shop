@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
-import './footer.css';
+import  './footer.css';
 import facebook from '../../../public/assets/img/facebook.png'
 import pinterst from '../../../public/assets/img/pinterst.png'
 import twitter from '../../../public/assets/img/twitter.png'

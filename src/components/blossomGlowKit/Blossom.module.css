@@ -1,4 +1,4 @@
-.blossom-glow-kit {
+.blossomGlowKit {
   max-width: 85%;
   margin: 0 auto;
   display: flex;
@@ -11,17 +11,16 @@
 
 .content {
   display: flex;
-  gap: 60px; 
+  gap: 60px;
   align-items: center;
   padding: 20px;
- 
 }
 
 .reverse .content {
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
 }
 
-.text-section {
+.textSection {
   flex: 1 1;
   padding: 20px;
   display: flex;
@@ -29,14 +28,14 @@
   flex-direction: column;
 }
 
-.text-section h2 {
+.textSection h2 {
   font-size: 36px;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
 }
 
-.text-section p {
+.textSection p {
   font-size: 16px;
   line-height: 1.5;
   color: #666;
@@ -51,7 +50,7 @@
 }
 
 .tag {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   color: #333;
   padding: 5px 10px;
   border-radius: 20px;
@@ -63,37 +62,37 @@
   gap: 15px;
 }
 
-.shop-now {
+.shopNow {
   width: 250px;
   height: 41px;
   padding: 10px 88px;
-  background-color: rgb(245 163 183 / 100%);
+  background-color: rgb(245, 163, 183);
   color: black;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
-.shop-now:hover {
+.shopNow:hover {
   background-color: black;
   color: white;
 }
 
-.explore-more {
+.exploreMore {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
-.image-section {
+.imageSection {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.image-section img {
+.imageSection img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
