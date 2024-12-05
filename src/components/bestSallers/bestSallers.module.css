@@ -17,7 +17,7 @@
 
 .seeAllSallers {
   text-decoration: none;
-  color: rgb(105, 117, 134);
+  color: rgb(105 117 134);
   display: flex;
   justify-content: center;
   margin-bottom: 10px;

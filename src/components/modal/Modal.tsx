@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React, { FC } from "react";
 import modalStyles from "./Modal.module.css";
+// @ts-expect-error" // eslint-line
 import googleImg from "../../../public/assets/img/google_img.png";
 import { Input } from "../../ui/Input";
 import { Button } from "../../ui/Button";
@@ -18,7 +18,7 @@ const Modal: FC<Props> = ({ onClose }) => {
         Please enter your e-mail and password:
       </p>
       <div className={modalStyles.modalInputGroup}>
-        <Input placeholder="Email" type="email" />
+        <Input placeholder={'Email' as string} type="email" />
         <Input placeholder="Password" type="password" />
       </div>
       <Button className={modalStyles.modalLoginButton}>Log In</Button>

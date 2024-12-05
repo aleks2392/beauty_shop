@@ -29,23 +29,19 @@ module.exports = {
         },
       },
       {
-        test: /\.module\.css$/,
+        test: /\.css$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
+              esModule: false,
               modules: {
                 localIdentName: '[name]__[local]--[hash:base64:5]',
               },
             },
           },
         ],
-      },
-      {
-        test: /\.css$/,
-        exclude: /\.module\.css$/,
-        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,

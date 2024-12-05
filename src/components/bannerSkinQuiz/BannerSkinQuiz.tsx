@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import styles from './BannerQuiz.module.css';
 import mask from '../../../public/assets/img/mask.svg';

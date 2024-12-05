@@ -1,8 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import Item from "../item/Item";
 import bestSallerStyles from "./bestSallers.module.css";
+// @ts-expect-error" // eslint-line
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
+// @ts-expect-error" // eslint-line
 import flowerRight from "../../../public/assets/img/rightFlower.png";
 
 const BestSallers = () => {

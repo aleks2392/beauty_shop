@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React, { useState } from "react";
 import search from '../../../public/assets/img/search.svg';
 import account from '../../../public/assets/img/account.svg';

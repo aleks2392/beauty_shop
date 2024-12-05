@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import styles from "./Inst.module.css";
+// @ts-expect-error" // eslint-line
 import iamageInst from "../../../public/assets/img/soft_finish.png";
 import { Button } from "../../ui/Button";
 

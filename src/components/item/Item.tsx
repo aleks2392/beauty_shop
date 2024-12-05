@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import styles from "./Item.module.css";
+// @ts-expect-error" // eslint-line
 import cream from "../../../public/assets/img/aqua.png";
 import { Button } from "../../ui/Button";
 
