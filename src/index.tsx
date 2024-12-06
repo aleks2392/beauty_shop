@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <ShopAll />,
       },
       {
-        path: "/сollection",
+        path: "/collection",
         element: <Collection />,
       },
       {
