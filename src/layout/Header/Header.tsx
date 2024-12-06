@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import search from '../../../public/assets/img/search.svg';
-import account from '../../../public/assets/img/account.svg';
-import cart from '../../../public/assets/img/cart.svg';
-import headerStyles from './Header.module.css';
-import Modal from '../../components/modal/Modal';
-import Search from '../../components/search/Search';
+import search from "../../../public/assets/img/search.svg";
+import account from "../../../public/assets/img/account.svg";
+import cart from "../../../public/assets/img/cart.svg";
+import headerStyles from "./Header.module.css";
+import Modal from "../../components/modal/Modal";
+import Search from "../../components/search/Search";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const [modalActive, setModalActive] = useState(false);
@@ -30,23 +31,43 @@ function Header() {
     <>
       <header className={headerStyles.header}>
         <div className={headerStyles.headerContainer}>
-          <h3 className={headerStyles.title}>
-            Bloom <span className={headerStyles.titleSpan}>Beauty</span>
-          </h3>
+          <NavLink to="/" className={headerStyles.title}>
+            <h3 className={headerStyles.title}>
+              Bloom <span className={headerStyles.titleSpan}>Beauty</span>
+            </h3>
+          </NavLink>
           <nav className={headerStyles.headerNav}>
-            <a href="/" className={headerStyles.headerNavLink}>SHOP ALL</a>
-            <a href="/" className={headerStyles.headerNavLink}>BESTSELLERS</a>
-            <a href="/" className={headerStyles.headerNavLink}>COLLECTION</a>
-            <a href="/" className={headerStyles.headerNavLink}>ABOUT US</a>
-            <a href="/" className={headerStyles.headerNavLink}>BLOG</a>
+            <NavLink to="/shop-all" className={headerStyles.headerNavLink}>
+              SHOP ALL
+            </NavLink>
+            <NavLink to="/bestsellers" className={headerStyles.headerNavLink}>
+              BESTSELLERS
+            </NavLink>
+            <NavLink to="/сollection" className={headerStyles.headerNavLink}>
+              COLLECTION
+            </NavLink>
+            <NavLink to="/about" className={headerStyles.headerNavLink}>
+              ABOUT US
+            </NavLink>
+            <NavLink to="/blog" className={headerStyles.headerNavLink}>
+              BLOG
+            </NavLink>
           </nav>
           <div className={headerStyles.icons}>
             <div className={headerStyles.iconItem} onClick={openSearchModal}>
-              <img src={search} alt="search" className={headerStyles.iconItemImg} />
+              <img
+                src={search}
+                alt="search"
+                className={headerStyles.iconItemImg}
+              />
               <span>SEARCH</span>
             </div>
             <div className={headerStyles.iconItem} onClick={handleModalOpen}>
-              <img src={account} alt="account" className={headerStyles.iconItemImg} />
+              <img
+                src={account}
+                alt="account"
+                className={headerStyles.iconItemImg}
+              />
               <span>ACCOUNT</span>
             </div>
             <div className={headerStyles.iconItem}>
