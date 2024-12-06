@@ -3,14 +3,6 @@
   "version": "0.1.0",
   "homepage": "https://aleks2392.github.io/beauty_shop",
   "private": true,
-  "dependencies": {
-    "classnames": "^2.5.1",
-    "prop-types": "^15.8.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "reset-css": "5.0.2",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
     "start:storybook": "storybook dev -p 6006",
@@ -27,17 +19,13 @@
     "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "reset-css": "5.0.2",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -86,5 +74,17 @@
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
