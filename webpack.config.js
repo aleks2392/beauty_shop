@@ -16,17 +16,7 @@ module.exports = {
       {
         test: /\.[jt]sx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              "@babel/preset-env",
-              "@babel/preset-react",
-              "@babel/preset-typescript",
-            ],
-            plugins: [],
-          },
-        },
+        use: "ts-loader",
       },
       {
         test: /\.css$/,

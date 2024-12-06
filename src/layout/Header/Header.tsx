@@ -43,7 +43,7 @@ function Header() {
             <NavLink to="/bestsellers" className={headerStyles.headerNavLink}>
               BESTSELLERS
             </NavLink>
-            <NavLink to="/сollection" className={headerStyles.headerNavLink}>
+            <NavLink to="/collection" className={headerStyles.headerNavLink}>
               COLLECTION
             </NavLink>
             <NavLink to="/about" className={headerStyles.headerNavLink}>
