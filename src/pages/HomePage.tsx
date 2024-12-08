@@ -8,10 +8,12 @@ import BlossomIMG2 from "../../public/assets/img/BlossomIMG.svg";
 import Blog from "../components/blog/Blog";
 import Quiz from "../components/bannerSkinQuiz/BannerSkinQuiz";
 import InstSection from "../components/instSection/InstSection";
+import RegistrationForm from "../components/registrationForm/RegistrationForm";
 
 function HomePage() {
   return (
     <>
+      <RegistrationForm />
       <Banner />
       <NewArrivals />
       <BestSallers />
