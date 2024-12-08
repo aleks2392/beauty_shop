@@ -35,7 +35,7 @@ const InstagramSection = () => {
         {images.map((src, index) => (
           <div className={styles.galleryImage} key={index}>
             <img src={src} alt={`Gallery image ${index + 1}`} />
-            <div className={styles.overlay}>
+            <div className={styles.instOverlay}>
               <Button
                 className={styles.overlayButton}
                 onClick={() => {

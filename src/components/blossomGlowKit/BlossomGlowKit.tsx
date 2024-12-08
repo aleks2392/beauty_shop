@@ -20,7 +20,7 @@ const BlossomGlowKit: React.FC<BlossomGlowKitProps> = ({
         reverse ? blossomStyles.reverse : ""
       }`}
     >
-      <div className={blossomStyles.content}>
+      <div className={blossomStyles.blossomContent}>
         <div className={blossomStyles.textSection}>
           <h2>{title}</h2>
           <p>{description}</p>

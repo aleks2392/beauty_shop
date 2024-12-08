@@ -71,7 +71,7 @@
   transform: scale(1.05);
 }
 
-.overlay {
+.instOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@
   transition: opacity 0.3s ease;
 }
 
-.galleryImage:hover .overlay {
+.galleryImage:hover .instOverlay {
   opacity: 1;
 }
 

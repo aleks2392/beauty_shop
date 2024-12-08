@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./index.module.css";
+import styles from "./UiModal.module.css";
 import { Portal } from "../Portal/Portal";
 
 export type ModalProps = {
@@ -9,9 +9,9 @@ export type ModalProps = {
 
 export const Modal: FC<ModalProps> = ({ children, onClose }) => (
   <Portal>
-    <div className={styles.overlay}>
-      <div className={styles.content}>
-        <button className={styles.closeButton} onClick={onClose}>
+    <div className={styles.uiModalOverlay}>
+      <div className={styles.uiModalContent}>
+        <button className={styles.uiModalCloseButton} onClick={onClose}>
           X
         </button>
         {children}
