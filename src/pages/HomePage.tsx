@@ -13,7 +13,7 @@ import RegistrationForm from "../components/registrationForm/RegistrationForm";
 function HomePage() {
   return (
     <>
-      <RegistrationForm />
+      {/* <RegistrationForm /> */}
       <Banner />
       <NewArrivals />
       <BestSallers />
