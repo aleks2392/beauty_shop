@@ -6,7 +6,11 @@ import { Button } from "../../ui/Button/Button";
 import { useForm } from "react-hook-form";
 import { isEmail } from "validator";
 
-const RegistrationForm = () => {
+type Props = {
+  onClose: () => void;
+};
+
+const RegistrationForm: FC<Props> = ({ onClose }) => {
   const {
     register,
     handleSubmit,
@@ -24,6 +28,7 @@ const RegistrationForm = () => {
         <p className={modalStyles.modalSubtitle}>
           Please fill in the fields below:
         </p>
+
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={modalStyles.modalInputGroup}>
             <input
@@ -104,7 +109,7 @@ const RegistrationForm = () => {
             <span className={modalStyles.dividerLine}></span>
           </div>
 
-          <Button className={modalStyles.modalGoogleButton}>
+          <Button className={modalStyles.modalGoogleButton} onClick={onClose}>
             Continue With Google
           </Button>
 

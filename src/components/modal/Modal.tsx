@@ -1,16 +1,26 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import modalStyles from "./Modal.module.css";
 // @ts-expect-error" // eslint-line
 import googleImg from "../../../public/assets/img/google_img.png";
 import { Input } from "../../ui/Input";
 import { Button } from "../../ui/Button";
 import { Modal as UiModal, ModalProps as UiModalProps } from "../../ui/Modal";
+import RegistrationForm from "../registrationForm/RegistrationForm";
 
 type Props = {
   onClose: UiModalProps["onClose"];
 };
 
 const Modal: FC<Props> = ({ onClose }) => {
+  const [createAccount, setCreateAccount] = useState(false);
+
+  const openNewAccount = () => {
+    setCreateAccount(true);
+  };
+
+  const closeNewAccount = () => {
+    setCreateAccount(false);
+  };
   return (
     <UiModal onClose={onClose}>
       <h2 className={modalStyles.modalTitle}>Log In</h2>
@@ -38,13 +48,14 @@ const Modal: FC<Props> = ({ onClose }) => {
             Recover password
           </a>
         </p>
-        <p>
+        <p onClick={openNewAccount}>
           New to Bloom Beauty?{" "}
-          <a href="/" className={modalStyles.modalLink}>
+          <a href="#" className={modalStyles.modalLink}>
             Create an Account
           </a>
         </p>
       </div>
+      {createAccount && <RegistrationForm onClose={closeNewAccount} />}
     </UiModal>
   );
 };
