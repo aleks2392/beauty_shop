@@ -18,7 +18,7 @@ const Modal: FC<Props> = ({ onClose }) => {
         Please enter your e-mail and password:
       </p>
       <div className={modalStyles.modalInputGroup}>
-        <Input placeholder={'Email' as string} type="email" />
+        <Input placeholder={"Email" as string} type="email" />
         <Input placeholder="Password" type="password" />
       </div>
       <Button className={modalStyles.modalLoginButton}>Log In</Button>

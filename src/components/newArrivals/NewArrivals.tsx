@@ -18,10 +18,10 @@ function NewArrivals() {
         See All
       </a>
       <div className={styles.containerArrivals}>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
+        <Item />
+        <Item />
+        <Item />
+        <Item />
       </div>
     </>
   );
