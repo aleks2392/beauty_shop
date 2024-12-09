@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, { FC } from "react";
 import { Input } from "../../ui/Input";
 import searchStyles from "./Search.module.css";
 

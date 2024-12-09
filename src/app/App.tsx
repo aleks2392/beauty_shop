@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import {RouterProvider} from "./providers/router";
+import { RouterProvider } from "./providers/router";
 
 function App() {
-    return <RouterProvider/>;
+  return <RouterProvider />;
 }
 
 export default App;
