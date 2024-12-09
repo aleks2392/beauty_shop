@@ -6,7 +6,7 @@ import twitter from "../../../public/assets/img/twitter.png";
 import instagram from "../../../public/assets/img/instagram.png";
 import telegram from "../../../public/assets/img/telegram.png";
 
-function Footer() {
+export function Footer() {
   return (
     <footer className={footerStyles.footerContainer}>
       <div
@@ -125,5 +125,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
