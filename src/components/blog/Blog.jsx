@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
-import styles from './Blog.module.css';
-import blogImg from '../../../public/assets/img/blog.svg';
+import styles from "./Blog.module.css";
+import blogImg from "../../../public/assets/img/blog.svg";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
 

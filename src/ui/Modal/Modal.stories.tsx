@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
+import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 
-import { Modal } from '.';
-import React, {useState} from "react";
-import {Button} from "../Button";
+import { Modal } from ".";
+import React, { useState } from "react";
+import { Button } from "../Button";
 
 const meta = {
-  title: 'UI/Modal',
+  title: "UI/Modal",
   component: Modal,
   args: { onClose: fn() },
 } satisfies Meta<typeof Modal>;
@@ -16,18 +16,30 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: 'Контент модалки',
+    children: "Контент модалки",
   },
   render: () => {
     const [show, setShow] = useState(false);
 
-    return (<>
-          <Button onClick={() => { setShow(true); }}>Открыть модалку</Button>
-      {show && <Modal onClose={() => {
-        setShow(false);
-      }}>Контент модалки</Modal>}
-        </>)
-  }
+    return (
+      <>
+        <Button
+          onClick={() => {
+            setShow(true);
+          }}
+        >
+          Открыть модалку
+        </Button>
+        {show && (
+          <Modal
+            onClose={() => {
+              setShow(false);
+            }}
+          >
+            Контент модалки
+          </Modal>
+        )}
+      </>
+    );
+  },
 };
-
-

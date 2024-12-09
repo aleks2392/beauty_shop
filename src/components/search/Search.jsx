@@ -14,10 +14,7 @@ const Search = ({ onClose }) => {
             type="search"
             className={searchStyles.styledInput}
           />
-          <button
-            onClick={onClose}
-            className={searchStyles.closeSearchButton}
-          >
+          <button onClick={onClose} className={searchStyles.closeSearchButton}>
             X
           </button>
         </div>
