@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../../ui/Button";
 import styles from "./Banner.module.css";
-// @ts-expect-error // eslint-line
 import bannerImg from "../../../public/assets/img/bannerImg.png";
 
 export const Banner = () => {

@@ -1,11 +1,8 @@
 import React from "react";
 import styles from "./Inst.module.css";
-// @ts-expect-error" // eslint-line
 import iamageInst from "../../../public/assets/img/soft_finish.png";
 import { Button } from "../../ui/Button";
-// @ts-expect-error" // eslint-line
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
-// @ts-expect-error" // eslint-line
 import flowerRight from "../../../public/assets/img/rightFlower.png";
 
 const InstagramSection = () => {

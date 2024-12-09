@@ -9,7 +9,7 @@ import Blog from "../components/blog/Blog";
 import Quiz from "../components/bannerSkinQuiz/BannerSkinQuiz";
 import InstSection from "../components/instSection/InstSection";
 
-function HomePage() {
+export function HomePage() {
   return (
     <>
       <Banner />
