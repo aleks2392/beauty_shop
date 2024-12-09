@@ -4,7 +4,7 @@ import account from "../../../public/assets/img/account.svg";
 import cart from "../../../public/assets/img/cart.svg";
 import headerStyles from "./Header.module.css";
 import Modal from "../../components/modal/Modal";
-import Search from "../../components/search/Search";
+import { Search } from "../../components/search/Search";
 import { NavLink } from "react-router-dom";
 
 function Header() {

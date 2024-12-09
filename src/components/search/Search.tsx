@@ -1,10 +1,12 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import React from "react";
-import PropTypes from "prop-types";
-import { Input } from "../../ui/Input/Input";
+import React, {FC} from "react";
+import { Input } from "../../ui/Input";
 import searchStyles from "./Search.module.css";
 
-const Search = ({ onClose }) => {
+type Props = {
+  onClose: () => void;
+};
+
+export const Search: FC<Props> = ({ onClose }) => {
   return (
     <div className={searchStyles.overlayModalSearch}>
       <div className={searchStyles.modalSearchInput}>
@@ -22,9 +24,3 @@ const Search = ({ onClose }) => {
     </div>
   );
 };
-
-Search.propTypes = {
-  onClose: PropTypes.func.isRequired,
-};
-
-export default Search;
