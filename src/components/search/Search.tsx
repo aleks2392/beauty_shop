@@ -5,7 +5,7 @@ import searchStyles from "./Search.module.css";
 type Props = {
   onClose: () => void;
 };
-
+// TODO: создать ui-компонент SearchInput
 export const Search: FC<Props> = ({ onClose }) => {
   return (
     <div className={searchStyles.overlayModalSearch}>
