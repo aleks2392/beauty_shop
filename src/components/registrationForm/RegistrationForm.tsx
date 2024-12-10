@@ -109,14 +109,14 @@ const RegistrationForm: FC<Props> = ({ onClose }) => {
             <span className={modalStyles.dividerLine}></span>
           </div>
 
-          <Button className={modalStyles.modalGoogleButton} onClick={onClose}>
+          <Button className={modalStyles.modalGoogleButton}>
             Continue With Google
           </Button>
 
           <div className={modalStyles.modalFooter}>
             <p>
               Already have an account?{" "}
-              <a href="/" className={modalStyles.modalLink}>
+              <a href="#" className={modalStyles.modalLink} onClick={onClose}>
                 Back to Log In
               </a>
             </p>
