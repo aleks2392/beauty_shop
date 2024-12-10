@@ -1,17 +1,12 @@
 import React from "react";
 import footerStyles from "./Footer.module.css";
-// @ts-expect-error" // eslint-line
-import facebook from "../../../public/assets/img/facebook.png";
-// @ts-expect-error" // eslint-line
-import pinterst from "../../../public/assets/img/pinterst.png";
-// @ts-expect-error" // eslint-line
-import twitter from "../../../public/assets/img/twitter.png";
-// @ts-expect-error // eslint-line
-import instagram from "../../../public/assets/img/instagram.png";
-// @ts-expect-error" // eslint-line
-import telegram from "../../../public/assets/img/telegram.png";
+import facebook from "../../../../../../../../public/assets/img/facebook.png";
+import pinterst from "../../../../../../../../public/assets/img/pinterst.png";
+import twitter from "../../../../../../../../public/assets/img/twitter.png";
+import instagram from "../../../../../../../../public/assets/img/instagram.png";
+import telegram from "../../../../../../../../public/assets/img/telegram.png";
 
-function Footer() {
+export function Footer() {
   return (
     <footer className={footerStyles.footerContainer}>
       <div
@@ -130,5 +125,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
