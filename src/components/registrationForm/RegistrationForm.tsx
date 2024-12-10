@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import React from "react";
+import React, { FC } from "react";
 import modalStyles from "./registrationForm.module.css";
 import { Button } from "../../ui/Button/Button";
 import { useForm } from "react-hook-form";
