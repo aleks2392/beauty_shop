@@ -28,11 +28,7 @@ export const Default: Story = {
             setShow(true);
           }}
         >
-<<<<<<< HEAD
           Opene Modal
-=======
-          Открыть модалку
->>>>>>> main
         </Button>
         {show && (
           <Modal
@@ -40,11 +36,7 @@ export const Default: Story = {
               setShow(false);
             }}
           >
-<<<<<<< HEAD
             Content
-=======
-            Контент модалки
->>>>>>> main
           </Modal>
         )}
       </>
