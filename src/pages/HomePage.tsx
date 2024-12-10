@@ -10,7 +10,7 @@ import Quiz from "../components/bannerSkinQuiz/BannerSkinQuiz";
 import InstSection from "../components/instSection/InstSection";
 import RegistrationForm from "../components/registrationForm/RegistrationForm";
 
-function HomePage() {
+export function HomePage() {
   return (
     <>
       {/* <RegistrationForm /> */}

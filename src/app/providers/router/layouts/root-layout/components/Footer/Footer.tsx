@@ -1,39 +1,53 @@
 import React from "react";
-import footerStyles from './Footer.module.css';
-// @ts-expect-error" // eslint-line
-import facebook from '../../../public/assets/img/facebook.png'
-// @ts-expect-error" // eslint-line
-import pinterst from '../../../public/assets/img/pinterst.png'
-// @ts-expect-error" // eslint-line
-import twitter from '../../../public/assets/img/twitter.png'
-// @ts-expect-error // eslint-line
-import instagram from '../../../public/assets/img/instagram.png'
-// @ts-expect-error" // eslint-line
-import telegram from '../../../public/assets/img/telegram.png'
+import footerStyles from "./Footer.module.css";
+import facebook from "../../../../../../../../public/assets/img/facebook.png";
+import pinterst from "../../../../../../../../public/assets/img/pinterst.png";
+import twitter from "../../../../../../../../public/assets/img/twitter.png";
+import instagram from "../../../../../../../../public/assets/img/instagram.png";
+import telegram from "../../../../../../../../public/assets/img/telegram.png";
 
-
-function Footer() {
+export function Footer() {
   return (
     <footer className={footerStyles.footerContainer}>
-      <div className={`${footerStyles.footerSection} ${footerStyles.socialIcons}`}>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <div
+        className={`${footerStyles.footerSection} ${footerStyles.socialIcons}`}
+      >
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={facebook} alt="Facebook" />
         </a>
-        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://pinterest.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={pinterst} alt="Pinterest" />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <img src={twitter} alt="Twitter" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={instagram} alt="Instagram" />
         </a>
-        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://telegram.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={telegram} alt="Telegram" />
         </a>
       </div>
       <div className={footerStyles.footerMain}>
-        <div className={`${footerStyles.footerSection} ${footerStyles.companyInfo}`}>
+        <div
+          className={`${footerStyles.footerSection} ${footerStyles.companyInfo}`}
+        >
           <h3>
             <span className={footerStyles.brandName}>Bloom</span> Beauty
           </h3>
@@ -85,7 +99,9 @@ function Footer() {
           </ul>
         </div>
 
-        <div className={`${footerStyles.footerSection} ${footerStyles.footerSubscribe}`}>
+        <div
+          className={`${footerStyles.footerSection} ${footerStyles.footerSubscribe}`}
+        >
           <h3>Sign Up for Emails</h3>
           <p>Stay informed, subscribe to our newsletter now!</p>
           <div className={footerStyles.subscribeForm}>
@@ -109,5 +125,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

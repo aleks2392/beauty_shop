@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import modalStyles from "./Modal.module.css";
-// @ts-expect-error" // eslint-line
 import googleImg from "../../../public/assets/img/google_img.png";
 import { Input } from "../../ui/Input";
 import { Button } from "../../ui/Button";

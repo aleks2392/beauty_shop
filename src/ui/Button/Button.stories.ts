@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
+import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 
-import { Button } from '.';
+import { Button } from ".";
 
 const meta = {
-  title: 'UI/Button',
+  title: "UI/Button",
   component: Button,
   args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
@@ -14,6 +14,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: 'Нажми на меня!',
+    children: "Нажми на меня!",
   },
 };

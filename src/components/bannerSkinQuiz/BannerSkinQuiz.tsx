@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './BannerQuiz.module.css';
-import mask from '../../../public/assets/img/mask.svg';
-import { Button } from '../../ui/Button';
+import styles from "./BannerQuiz.module.css";
+import mask from "../../../public/assets/img/mask.svg";
+import { Button } from "../../ui/Button";
 
 const SkinQuiz = () => {
   return (

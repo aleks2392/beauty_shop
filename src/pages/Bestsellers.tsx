@@ -1,6 +1,6 @@
 import React from "react";
 
-const Bestsellers = () => {
+export const Bestsellers = () => {
   return <h1>Bestsellers</h1>;
 };
 
