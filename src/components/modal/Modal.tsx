@@ -30,9 +30,7 @@ const Modal: FC<Props> = ({ onClose }) => {
         <Input placeholder={"Email" as string} type="email" />
         <Input placeholder="Password" type="password" />
       </div>
-      <Button label="Log In" className="pink large">
-        Log In
-      </Button>
+      <Button label="Log In" className="pink large"></Button>
       <div className={modalStyles.modalDivider}>
         <span className={modalStyles.dividerLine}></span>
         <span className={modalStyles.dividerText}>OR</span>

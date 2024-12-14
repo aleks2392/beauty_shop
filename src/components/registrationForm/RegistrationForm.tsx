@@ -112,9 +112,7 @@ const RegistrationForm: FC<Props> = ({ onClose }) => {
             label="Continue With Google"
             variant="pink"
             className={modalStyles.modalGoogleButton}
-          >
-            Continue With Google
-          </Button>
+          ></Button>
 
           <div className={modalStyles.modalFooter}>
             <p>
