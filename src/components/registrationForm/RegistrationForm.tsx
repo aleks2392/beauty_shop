@@ -94,9 +94,7 @@ const RegistrationForm: FC<Props> = ({ onClose }) => {
             )}
           </div>
 
-          <Button type="submit" className={modalStyles.modalLoginButton}>
-            Register
-          </Button>
+          <Button type="submit" label="Register" className="pink"></Button>
           <div className={modalStyles.subscribe}>
             <input {...register("checkbox")} type="checkbox" />
             <p>Yes, I want subscribe to newsletter now</p>
@@ -109,7 +107,12 @@ const RegistrationForm: FC<Props> = ({ onClose }) => {
             <span className={modalStyles.dividerLine}></span>
           </div>
 
-          <Button className={modalStyles.modalGoogleButton}>
+          <Button
+            type="submit"
+            label="Continue With Google"
+            variant="pink"
+            className={modalStyles.modalGoogleButton}
+          >
             Continue With Google
           </Button>
 

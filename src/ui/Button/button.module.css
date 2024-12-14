@@ -1,20 +1,96 @@
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 41px;
-  background-color: var(--pink);
-  border: none;
-  border-radius: 4px;
-  color: var(--black);
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
+:root {
+  --pink: #f5a3b7;
+  --black: #000;
+  --white: #fff;
+  --gray-disabled: #d6d6d6;
+  --gray-disabled-text: #999;
+  --button-padding: 10px;
+  --button-font-size: 16px;
+  --button-border-radius: 4px;
+  --transition-duration: 0.3s;
+  --hover-bg: var(--black);
+  --hover-text: var(--white);
 }
 
-.button:hover {
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 41px;
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  color: var(--black);
+  background-color: var(--pink);
+  border: none;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+  transition:
+    background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
+}
+
+.btn .label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.btn.small {
+  width: 100%;
+  max-width: 195px;
+  min-width: 120px;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin: 5px;
+}
+
+.btn.medium {
+  width: 250px;
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+.btn.large {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+.btn.transparent {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn.pink {
+  background-color: var(--pink);
+  color: var(--black);
+}
+
+.btn:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+
+.btn.transparent:hover {
   background-color: var(--black);
   color: var(--white);
+}
+
+.btn:disabled {
+  background-color: var(--gray-disabled);
+  color: var(--gray-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
 }

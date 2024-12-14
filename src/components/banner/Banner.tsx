@@ -19,13 +19,12 @@ export const Banner = () => {
         </h1>
         <p>Great gift for yourself and loved ones</p>
         <Button
-          className={styles.bannerButton}
+          label="Shop Now"
+          className="pink medium"
           onClick={() => {
             alert("Working");
           }}
-        >
-          Shop Now
-        </Button>
+        ></Button>
       </div>
     </section>
   );

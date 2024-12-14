@@ -16,13 +16,12 @@ const SkinQuiz = () => {
             Meet the quiz that will curate a routine just as unique as you are.
           </p>
           <Button
-            className={styles.exploreButton}
+            label="Explore More"
+            className="pink medium"
             onClick={() => {
               alert("quiz");
             }}
-          >
-            Explore More
-          </Button>
+          ></Button>
         </div>
       </div>
     </section>

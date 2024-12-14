@@ -4,6 +4,7 @@ import iamageInst from "../../../public/assets/img/soft_finish.png";
 import { Button } from "../../ui/Button";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
+import instagram from "../../../public/assets/img/instagram.png";
 
 const InstagramSection = () => {
   const images = [
@@ -34,33 +35,32 @@ const InstagramSection = () => {
             <img src={src} alt={`Gallery image ${index + 1}`} />
             <div className={styles.instOverlay}>
               <Button
-                className={styles.overlayButton}
+                label="See In"
+                className="pink small"
                 onClick={() => {
                   alert("See In");
                 }}
               >
-                See In
+                <img src={instagram} alt="Inst" />
               </Button>
               <Button
-                className={styles.overlayButton}
+                label="Buy Now"
+                className="pink small"
                 onClick={() => {
                   alert("Buy Now");
                 }}
-              >
-                Buy Now
-              </Button>
+              ></Button>
             </div>
           </div>
         ))}
       </div>
       <Button
-        className={styles.galleryButton}
+        label="Follow Us"
+        className="pink medium"
         onClick={() => {
           alert("Follow Us");
         }}
-      >
-        Follow Us
-      </Button>
+      ></Button>
     </div>
   );
 };

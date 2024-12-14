@@ -17,13 +17,12 @@ function Item() {
         </p>
         <p className={styles.productPrice}>$25</p>
         <Button
-          className={styles.addToBagBtn}
+          label="Add To Cart"
+          className="transparent"
           onClick={() => {
             alert("Added to cart");
           }}
-        >
-          Add To Cart
-        </Button>
+        ></Button>
       </div>
     </div>
   );
