@@ -5,12 +5,11 @@ import { Portal } from "../Portal/Portal";
 export type ModalProps = {
   children: React.ReactNode;
   onClose: () => void;
-  className?: string;
 };
 
-export const Modal: FC<ModalProps> = ({ children, onClose, className }) => (
+export const Modal: FC<ModalProps> = ({ children, onClose }) => (
   <Portal>
-    <div className={(styles.uiModalOverlay, className)}>
+    <div className={styles.uiModalOverlay}>
       <div className={styles.uiModalContent}>
         <button className={styles.uiModalCloseButton} onClick={onClose}>
           X

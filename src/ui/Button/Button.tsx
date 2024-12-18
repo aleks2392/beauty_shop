@@ -24,7 +24,7 @@ export const Button: FC<Props> = ({
   return (
     <button className={buttonClass} onClick={onClick} disabled={disabled}>
       {label && <span>{label}</span>}
-      {children && <span className={className || styles.icon}>{children}</span>}
+      {children && <span className={styles.icon}>{children}</span>}
     </button>
   );
 };

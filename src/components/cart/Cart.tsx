@@ -85,7 +85,7 @@ const Cart: FC<Props> = ({ onClose }) => {
                 .toFixed(2)}
             </span>
           </div>
-          <Button className={cartStyles.checkoutButton}>Check Out</Button>
+          <Button className={cartStyles.checkoutButton}>Confirm</Button>
         </div>
       </div>
     </div>
