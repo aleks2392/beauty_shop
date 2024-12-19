@@ -9,7 +9,7 @@ type Props = {
   className?: string;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   children?: React.ReactNode;
-};
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button: FC<Props> = ({
   children,
@@ -18,11 +18,17 @@ export const Button: FC<Props> = ({
   label,
   disabled = false,
   variant = "pink",
+  ...inputAttributes
 }) => {
   const buttonClass = cn(styles.btn, styles[`btn-${variant}`], className);
 
   return (
-    <button className={buttonClass} onClick={onClick} disabled={disabled}>
+    <button
+      className={buttonClass}
+      onClick={onClick}
+      disabled={disabled}
+      {...inputAttributes}
+    >
       {label && <span>{label}</span>}
       {children && <span className={styles.icon}>{children}</span>}
     </button>
