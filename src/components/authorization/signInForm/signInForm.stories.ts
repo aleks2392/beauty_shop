@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 
-import { SignInForm } from ".";
+import { SignInForm } from "./index";
 
 const meta = {
   title: "Features/SignInForm",

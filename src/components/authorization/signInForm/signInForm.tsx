@@ -1,5 +1,5 @@
-import { Input } from "../../ui/Input";
-import { Button } from "../../ui/Button";
+import { Input } from "../../../ui/Input";
+import { Button } from "../../../ui/Button";
 import React, { FC } from "react";
 
 import styles from "./signInForm.module.css";
@@ -10,11 +10,11 @@ type FormValues = {
   password: string;
 };
 
-type Props = {
+export type SignInFormProps = {
   onSubmit: SubmitHandler<FormValues>;
 };
 
-export const SignInForm: FC<Props> = ({ onSubmit }) => {
+export const SignInForm: FC<SignInFormProps> = ({ onSubmit }) => {
   const { control: formControl, handleSubmit } = useForm<FormValues>();
 
   const { field: emailField } = useController({

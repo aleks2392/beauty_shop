@@ -3,9 +3,9 @@ import search from "../../../../../../../../public/assets/img/search.svg";
 import account from "../../../../../../../../public/assets/img/account.svg";
 import cart from "../../../../../../../../public/assets/img/cart.svg";
 import headerStyles from "./Header.module.css";
-import Modal from "../../../../../../../components/modal/Modal";
 import { Search } from "../../../../../../../components/search/Search";
 import { NavLink } from "react-router-dom";
+import { AuthorizationModal } from "../../../../../../../components/authorization/AuthorizationModal";
 
 export function Header() {
   const [modalActive, setModalActive] = useState(false);
@@ -77,7 +77,7 @@ export function Header() {
           </div>
         </div>
       </header>
-      {modalActive && <Modal onClose={handleModalClose} />}
+      {modalActive && <AuthorizationModal onClose={handleModalClose} />}
       {searchActive && <Search onClose={closeSearchModal} />}
     </>
   );

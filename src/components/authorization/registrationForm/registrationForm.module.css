@@ -1,22 +1,23 @@
-.modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
+.container {
   width: 100%;
-  height: 100%;
-  background: rgb(0 0 0 / 50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+}
+
+.error {
+  color: #bf1650;
+}
+
+.error::before {
+  content: "⚠ ";
+  margin-right: 5px;
 }
 
 .modalContent {
+  margin: 0 auto;
   background: #fff;
   box-shadow: 0 2px 10px rgb(185 166 189 / 10%);
   border-radius: 6px;
   padding: 40px 100px;
-  width: 598px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,6 +71,17 @@
   box-sizing: border-box;
 }
 
+.modalLoginButton {
+  margin: 20px 0;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .modalLoginButton:hover {
   background: #f28096;
 }
@@ -79,6 +91,7 @@
   align-items: center;
   gap: 10px;
   width: 100%;
+  margin: 20px 0;
 }
 
 .dividerLine {
