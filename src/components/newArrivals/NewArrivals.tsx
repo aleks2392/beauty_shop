@@ -4,11 +4,8 @@ import styles from "./NewArrivals.module.css";
 import aqua from "../../../public/assets/img/aqua.png";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
-import { useProductActions } from "../productCard/hook/useProductActions";
 
 function NewArrivals() {
-  const { handleAddToCart, handleWishlistClick } = useProductActions();
-
   return (
     <>
       <div className={styles.titleNewArrivals}>
@@ -20,38 +17,15 @@ function NewArrivals() {
         See All
       </a>
       <div className={styles.containerArrivals}>
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={aqua}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={aqua}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={aqua}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={aqua}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
+        {[...Array(4)].map((_, index) => (
+          <Item
+            key={index}
+            name="Soft Finish"
+            description="All Around Safe Block Sun Milk SPF50+/PA++"
+            price="$25"
+            image={aqua}
+          />
+        ))}
       </div>
     </>
   );

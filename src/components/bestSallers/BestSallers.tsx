@@ -4,11 +4,8 @@ import bestSallerStyles from "./bestSallers.module.css";
 import creamImage from "../../../public/assets/img/cream.png";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
-import { useProductActions } from "../productCard/hook/useProductActions";
 
 const BestSallers = () => {
-  const { handleAddToCart, handleWishlistClick } = useProductActions();
-
   return (
     <>
       <div className={bestSallerStyles.titleNewSellers}>
@@ -20,38 +17,15 @@ const BestSallers = () => {
         See All
       </a>
       <div className={bestSallerStyles.containerSallers}>
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={creamImage}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={creamImage}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={creamImage}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
-        <Item
-          name="Soft Finish"
-          description="All Around Safe Block Sun Milk SPF50+/PA++"
-          price="$25"
-          image={creamImage}
-          onAddToCart={handleAddToCart}
-          onWishlistClick={handleWishlistClick}
-        />
+        {[...Array(4)].map((_, index) => (
+          <Item
+            key={index}
+            name="Soft Finish"
+            description="All Around Safe Block Sun Milk SPF50+/PA++"
+            price="$25"
+            image={creamImage}
+          />
+        ))}
       </div>
     </>
   );

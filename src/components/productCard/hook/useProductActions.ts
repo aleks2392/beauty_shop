@@ -1,13 +1,19 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 export const useProductActions = () => {
+  const [isWishlisted, setIsWishlisted] = useState(false);
+
   const handleAddToCart = useCallback(() => {
     alert("Added to cart!");
   }, []);
 
-  const handleWishlistClick = useCallback(() => {
-    alert("Added to wishlist!");
+  const toggleWishlist = useCallback(() => {
+    setIsWishlisted((prev) => !prev);
   }, []);
 
-  return { handleAddToCart, handleWishlistClick };
+  return {
+    isWishlisted,
+    toggleWishlist,
+    handleAddToCart,
+  };
 };
