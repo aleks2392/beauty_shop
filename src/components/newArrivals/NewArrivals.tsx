@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "../../components/item/Item";
 import styles from "./NewArrivals.module.css";
-import creamImage from "../../../public/assets/img/cream.png";
+import aqua from "../../../public/assets/img/aqua.png";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
 import { useProductActions } from "../productCard/hook/useProductActions";
@@ -24,7 +24,7 @@ function NewArrivals() {
           name="Soft Finish"
           description="All Around Safe Block Sun Milk SPF50+/PA++"
           price="$25"
-          image={creamImage}
+          image={aqua}
           onAddToCart={handleAddToCart}
           onWishlistClick={handleWishlistClick}
         />
@@ -32,7 +32,7 @@ function NewArrivals() {
           name="Soft Finish"
           description="All Around Safe Block Sun Milk SPF50+/PA++"
           price="$25"
-          image={creamImage}
+          image={aqua}
           onAddToCart={handleAddToCart}
           onWishlistClick={handleWishlistClick}
         />
@@ -40,7 +40,7 @@ function NewArrivals() {
           name="Soft Finish"
           description="All Around Safe Block Sun Milk SPF50+/PA++"
           price="$25"
-          image={creamImage}
+          image={aqua}
           onAddToCart={handleAddToCart}
           onWishlistClick={handleWishlistClick}
         />
@@ -48,7 +48,7 @@ function NewArrivals() {
           name="Soft Finish"
           description="All Around Safe Block Sun Milk SPF50+/PA++"
           price="$25"
-          image={creamImage}
+          image={aqua}
           onAddToCart={handleAddToCart}
           onWishlistClick={handleWishlistClick}
         />
