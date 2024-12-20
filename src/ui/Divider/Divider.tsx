@@ -8,7 +8,7 @@ type Props = {
 export const Divider: FC<Props> = ({ text }) => (
   <div className={styles.modalDivider}>
     <span className={styles.dividerLine}></span>
-    <span className={styles.dividerText}>OR</span>
+    <span className={styles.dividerText}>{text}</span>
     <span className={styles.dividerLine}></span>
   </div>
 );
