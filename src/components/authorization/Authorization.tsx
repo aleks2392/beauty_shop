@@ -4,6 +4,7 @@ import { RegistrationForm, RegistrationFormProps } from "./registrationForm";
 import { SignInForm, SignInFormProps } from "./signInForm";
 import { Button } from "../../ui/Button";
 import { Divider } from "../../ui/Divider";
+import { authController } from "../../api/controllers/auth-controller";
 
 export const Authorization = () => {
   const [authState, setAuthState] = useState<"signIn" | "signUp" | "recovery">(
@@ -12,9 +13,20 @@ export const Authorization = () => {
 
   const showGoogleButton = authState === "signIn" || authState === "signUp";
 
-  const handleSignInSubmit: SignInFormProps["onSubmit"] = () => {};
+  const handleSignInSubmit: SignInFormProps["onSubmit"] = async ({
+    email,
+    password,
+  }) => {
+    await authController.login({ email, password });
+  };
 
-  const handleSignUpSubmit: RegistrationFormProps["onSubmit"] = () => {};
+  const handleSignUpSubmit: RegistrationFormProps["onSubmit"] = async ({
+    email,
+    password,
+    firstname,
+  }) => {
+    await authController.registration({ email, password, name: firstname });
+  };
 
   const handleCreateAccountClick = () => {
     setAuthState("signUp");
