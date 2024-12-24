@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './BannerQuiz.module.css';
-import mask from '../../../public/assets/img/mask.svg';
-import { Button } from '../../ui/Button';
+import styles from "./BannerQuiz.module.css";
+import mask from "../../../public/assets/img/mask.svg";
+import { Button } from "../../ui/Button";
 
 const SkinQuiz = () => {
   return (
@@ -16,13 +16,12 @@ const SkinQuiz = () => {
             Meet the quiz that will curate a routine just as unique as you are.
           </p>
           <Button
-            className={styles.exploreButton}
+            label="Explore More"
+            className="pink medium"
             onClick={() => {
               alert("quiz");
             }}
-          >
-            Explore More
-          </Button>
+          ></Button>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Item.module.css";
-// @ts-expect-error" // eslint-line
 import cream from "../../../public/assets/img/aqua.png";
 import { Button } from "../../ui/Button";
 
@@ -18,13 +17,12 @@ function Item() {
         </p>
         <p className={styles.productPrice}>$25</p>
         <Button
-          className={styles.addToBagBtn}
+          label="Add To Cart"
+          className="transparent"
           onClick={() => {
             alert("Added to cart");
           }}
-        >
-          Add To Cart
-        </Button>
+        ></Button>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import blossomStyles from "./Blossom.module.css";
+import { Button } from "../../ui/Button";
 
 interface BlossomGlowKitProps {
   title: string;
@@ -20,7 +21,7 @@ const BlossomGlowKit: React.FC<BlossomGlowKitProps> = ({
         reverse ? blossomStyles.reverse : ""
       }`}
     >
-      <div className={blossomStyles.content}>
+      <div className={blossomStyles.blossomContent}>
         <div className={blossomStyles.textSection}>
           <h2>{title}</h2>
           <p>{description}</p>
@@ -32,9 +33,7 @@ const BlossomGlowKit: React.FC<BlossomGlowKitProps> = ({
             <span className={blossomStyles.tag}>#glow</span>
           </div>
           <div className={blossomStyles.buttons}>
-            <a href="/" className={blossomStyles.shopNow}>
-              Shop Now
-            </a>
+            <Button label="Shop Now" className="pink medium"></Button>
             <a href="/" className={blossomStyles.exploreMore}>
               Explore More →
             </a>

@@ -1,0 +1,72 @@
+.modalTitle {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #383838;
+  margin-bottom: -10px;
+}
+
+.modalSubtitle {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b0a6bd;
+  text-align: center;
+}
+
+.modalInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.modalDivider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: #b0a6bd;
+}
+
+.dividerText {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b0a6bd;
+}
+
+.modalGoogleButton {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #b0a6bd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #697586;
+}
+
+.modalGoogleButton:hover {
+  background-color: rgb(235 230 230 / 50%);
+}
+
+.modalGoogleButton img {
+  position: absolute;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+}

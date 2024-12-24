@@ -1,21 +1,19 @@
 import React from "react";
-import "./App.css";
-import Header from "./layout/Header/Header";
-import { Banner } from "./components/banner/Banner";
-import NewArrivals from "./components/newArrivals/NewArrivals";
-import BestSallers from "./components/bestSallers/BestSallers";
-import BlossomGlowKit from "./components/blossomGlowKit/BlossomGlowKit";
-import BlossomIMG1 from "../public/assets/img/BlossomIMG1.svg";
-import BlossomIMG2 from "../public/assets/img/BlossomIMG.svg";
-import Blog from "./components/blog/Blog";
-import Quiz from "./components/bannerSkinQuiz/BannerSkinQuiz";
-import InstSection from "./components/instSection/InstSection";
-import Footer from "./layout/Footer/Footer";
+import { Banner } from "../components/banner/Banner";
+import NewArrivals from "../components/newArrivals/NewArrivals";
+import BestSallers from "../components/bestSallers/BestSallers";
+import BlossomGlowKit from "../components/blossomGlowKit/BlossomGlowKit";
+import BlossomIMG1 from "../../public/assets/img/BlossomIMG1.svg";
+import BlossomIMG2 from "../../public/assets/img/BlossomIMG.svg";
+import Blog from "../components/blog/Blog";
+import Quiz from "../components/bannerSkinQuiz/BannerSkinQuiz";
+import InstSection from "../components/instSection/InstSection";
+// import RegistrationForm from "../components/registrationForm/RegistrationForm";
 
-function App() {
+export function HomePage() {
   return (
     <>
-      <Header />
+      {/* <RegistrationForm /> */}
       <Banner />
       <NewArrivals />
       <BestSallers />
@@ -33,9 +31,8 @@ function App() {
       <Blog />
       <Quiz />
       <InstSection />
-      <Footer />
     </>
   );
 }
 
-export default App;
+export default HomePage;

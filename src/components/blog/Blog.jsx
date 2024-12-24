@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
-import styles from './Blog.module.css';
-import blogImg from '../../../public/assets/img/blog.svg';
+import styles from "./Blog.module.css";
+import blogImg from "../../../public/assets/img/blog.svg";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
+import { Button } from "../../ui/Button";
 
 const articles = [
   {
@@ -52,7 +53,7 @@ const Blog = () => {
             <div className={styles.articleContent}>
               <h3>{article.title}</h3>
               <p>{article.description}</p>
-              <button className={styles.readMoreButton}>Read More</button>
+              <Button label="Read More" className="transparent large"></Button>
             </div>
           </div>
         ))}

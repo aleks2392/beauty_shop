@@ -71,8 +71,9 @@
   transform: scale(1.05);
 }
 
-.overlay {
+.instOverlay {
   position: absolute;
+  padding: 10px;
   top: 0;
   left: 0;
   width: 100%;
@@ -81,12 +82,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.galleryImage:hover .overlay {
+.galleryImage:hover .instOverlay {
   opacity: 1;
 }
 
