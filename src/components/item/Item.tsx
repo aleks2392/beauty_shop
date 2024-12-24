@@ -3,7 +3,7 @@ import styles from "./Item.module.css";
 import { Button } from "../../ui/Button";
 import wishIcon from "../../../public/assets/img/wishlistIcon.png";
 import activeHeartIcon from "../../../public/assets/img/redHeart.png";
-import { useProductActions } from "../productCard/hook/useProductActions";
+import { useProductActions } from "../../pages/productCard/hook/useProductActions";
 
 type Props = {
   name: string;

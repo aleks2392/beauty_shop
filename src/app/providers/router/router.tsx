@@ -51,6 +51,15 @@ export const router = createBrowserRouter([
           return { Component: Blog };
         },
       },
+      {
+        path: "product/",
+        async lazy() {
+          const { ProductCard } = await import(
+            "../../../pages/productCard/ProductCard"
+          );
+          return { Component: ProductCard };
+        },
+      },
     ],
   },
 ]);
