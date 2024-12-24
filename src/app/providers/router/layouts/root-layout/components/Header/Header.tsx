@@ -6,10 +6,20 @@ import headerStyles from "./Header.module.css";
 import { Search } from "../../../../../../../components/search/Search";
 import { NavLink } from "react-router-dom";
 import { AuthorizationModal } from "../../../../../../../components/authorization/AuthorizationModal";
+import Cart from "../../../../../../../components/cart/Cart";
 
 export function Header() {
   const [modalActive, setModalActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
+
+  const handleOpenCart = () => {
+    setOpenCart(true);
+  };
+
+  const handleCloseCart = () => {
+    setOpenCart(false);
+  };
 
   const handleModalOpen = () => {
     setModalActive(true);
@@ -70,7 +80,7 @@ export function Header() {
               />
               <span>ACCOUNT</span>
             </div>
-            <div className={headerStyles.iconItem}>
+            <div className={headerStyles.iconItem} onClick={handleOpenCart}>
               <img src={cart} alt="cart" className={headerStyles.iconItemImg} />
               <span>CART</span>
             </div>
@@ -79,6 +89,7 @@ export function Header() {
       </header>
       {modalActive && <AuthorizationModal onClose={handleModalClose} />}
       {searchActive && <Search onClose={closeSearchModal} />}
+      {openCart && <Cart onClose={handleCloseCart} />}
     </>
   );
 }

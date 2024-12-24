@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.reverse .content {
+.reverse .blossomContent {
   flex-direction: row-reverse;
 }
 
@@ -99,7 +99,6 @@
 }
 
 .imageSection {
-  flex: 1 1 50%;
   display: flex;
   align-items: center;
   justify-content: center;

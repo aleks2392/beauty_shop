@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Inst.module.css";
-import iamageInst from "../../../public/assets/img/soft_finish.png";
+import iamageInst from "../../../public/assets/img/instShots.png";
 import { Button } from "../../ui/Button";
 import flowerLeft from "../../../public/assets/img/leftFlower.png";
 import flowerRight from "../../../public/assets/img/rightFlower.png";
