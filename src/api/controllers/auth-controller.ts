@@ -1,5 +1,4 @@
-import { Http } from "../../utils/modules/http";
-const loginApi = new Http(" http://localhost:3000");
+import { mainApi } from "../models/main-api";
 
 class AuthController {
   public async registration(body: RegisterRequest) {
@@ -11,7 +10,7 @@ class AuthController {
       const myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
 
-      const data = await loginApi.post<RegisterResponse>("/register", {
+      const data = await mainApi.post<RegisterResponse>("/register", {
         headers: myHeaders,
         body: JSON.stringify(body),
       });
@@ -33,7 +32,7 @@ class AuthController {
       const myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
 
-      const data = await loginApi.post<LoginResponse>("/login", {
+      const data = await mainApi.post<LoginResponse>("/login", {
         headers: myHeaders,
         body: JSON.stringify(body),
       });
