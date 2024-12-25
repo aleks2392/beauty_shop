@@ -8,9 +8,9 @@ export class Http {
     this.prefix = prefix;
   }
 
-  get = (url: Url, options: Options) => {
-    return this.request(url, { ...options, method: "GET" });
-  };
+  get<TResponse>(url: Url, options: Options) {
+    return this.request<TResponse>(url, { ...options, method: "GET" });
+  }
 
   post<TResponse>(url: Url, options: Options) {
     return this.request<TResponse>(url, { ...options, method: "POST" });
