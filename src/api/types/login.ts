@@ -1,25 +1,25 @@
-type User = {
+export type User = {
   email: string;
   id: string;
 };
 
-type RegisterRequest = {
+export type RegisterRequest = {
   email: string;
   password: string;
   name?: string;
 };
 
-type RegisterResponse = {
+export type RegisterResponse = {
   accessToken: string;
   user: User;
 };
 
-type LoginRequest = {
+export type LoginRequest = {
   email: string;
   password: string;
 };
 
-type LoginResponse = {
+export type LoginResponse = {
   accessToken: string;
   user: User;
 };
